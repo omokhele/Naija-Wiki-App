@@ -1,72 +1,72 @@
-const Item = require('../models/item');
+const Detail = require('../models/detail');
 
-const createItem = async (req, res) => {
+const createDetail = async (req, res) => {
     try {
-        const item = await new Item(req.body)
-        await item.save()
+        const detail = await new Detail(req.body)
+        await detail.save()
         return res.status(201).json({
-            item,
+            detail,
         })
     } catch (error) {
         return res.status(500).json({error: error.message})
     }
 }
 
-const getItems = async (req, res) => {
+const getDetails = async (req, res) => {
     try{
-        const items = await Item.find()
-        return res.status(200).json({items})
+        const details = await Detail.find()
+        return res.status(200).json({details})
     } catch (error) {
         return res.status(500).send(error.message)
     }
 }
 
-const getItemById = async (req, res) => {
+const getDetailById = async (req, res) => {
     try {
         const { id } = req.params;
-        const item = await Item.findById(id)
-        if (item) {
-            return res.status(200).json({item});
+        const detail = await Detail.findById(id)
+        if (detail) {
+            return res.status(200).json({detail});
         }
-        return res.status(404).send('Item with the specified ID does not exist')
+        return res.status(404).send('Detail with the specified ID does not exist')
     }catch (error) {
         return res.status(500).send(error.message)
     }
 }
 
-const updateItem = (req, res) => {
+const updateDetail = (req, res) => {
     try{
         const { id } = req.params;
-        Item.findByIdAndUpdate(id, req.body, { new: true }, (err, item) => {
+        Detail.findByIdAndUpdate(id, req.body, { new: true }, (err, detail) => {
             if (error) {
                 res.status(500).send(error);
             }
-            if (!item) {
-                res.status(500).send('Item not found');
+            if (!detail) {
+                res.status(500).send('Detail not found');
             }
-            return res.status(200).json(item);
+            return res.status(200).json(detail);
         })
     }catch (error) {
         return res.status(500).send(error.message)
     }
 }
 
-const deleteItem = async (req, res) => {
+const deleteDetail = async (req, res) => {
     try{
         const { id } = req.params;
-        const deleted = await Item.findByIdAndDelete(id)
+        const deleted = await Detail.findByIdAndDelete(id)
         if(deleted) {
-            return res.status(200).send('Item deleted');
+            return res.status(200).send('Detail deleted');
         }
-        throw new Error('Item not found');
+        throw new Error('Detail not found');
     } catch (error) {
         return res.status(500).send(error.message);
     }
 }
 module.exports = {
-    createItem,
-    getItems,
-    getItemById,
-    updateItem,
-    deleteItem
+    createDetail,
+    getDetails,
+    getDetailById,
+    updateDetail,
+    deleteDetail
 }

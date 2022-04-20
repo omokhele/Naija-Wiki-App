@@ -3,10 +3,10 @@ const controllers = require('../controllers')
 const router = Router();
 
 router.get('/', (req, res) => res.send('This is the root!'))
-router.post('/items', controllers.createItem)
-router.get('/items', controllers.getItems)
-router.get('/items/:id', controllers.getItemById)
-router.put('/items/:id', controllers.updateItem)
-router.delete('/items/:id', controllers.deleteItem)
+router.post('/details', controllers.createDetail)
+router.get('/details', controllers.getDetails)
+router.get('/details/:id', controllers.getDetailById)
+router.put('/details/:id', controllers.updateDetail)
+router.delete('/details/:id', controllers.deleteDetail)
 
 module.exports = router;

@@ -1,10 +1,10 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const Item = new Schema(
+const Detail = new Schema(
     {
-        title: {type: String, required: true},
-        summary: {type: String, required: true},
+        // title: {type: String, required: true},
+        // summary: {type: String, required: true},
         culture: {type: String, ref: 'culture'},
         people: {type: String, ref: 'people'},
         places: {type: String, ref: 'places'},
@@ -14,4 +14,4 @@ const Item = new Schema(
     {timestamps: true}
 )
 
-module.exports = mongoose.model('items', Item)
+module.exports = mongoose.model('details', Detail)

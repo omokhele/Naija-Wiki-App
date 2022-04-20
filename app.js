@@ -9,6 +9,6 @@ app.use(express.urlencoded({ extended: false}));
 app.use(cors())
 app.use(logger('dev'))
 
-app.use('./api', routes)
+app.use('/api', routes)
 
 module.exports = app
