@@ -38,11 +38,14 @@ const main = async () => {
     // location: {type: String, required: true},
     // description: {type: String, required: true}
     // image: {type: String, required: true}
-    const places1 = await new Places ({name: 'Awhum Caves and Waterfalls', location: 'Udi Local Government Area, Enugu State', description: 'The Awhum Waterfall is formed out of a massive outcrop of granite rock with water flow at the top forming a stream. Some part of the waterfall is usually warm through the seasons. The Awhum waterfall is 30 metres high and is located around the Awhum Monastery.', image: '', source: 'https://en.wikipedia.org/wiki/Awhum_Waterfall'})
+    const places1 = await new Places ({name: 'Awhum Caves and Waterfalls', location: 'Udi Local Government Area, Enugu State', description: 'The Awhum Waterfall is formed out of a massive outcrop of granite rock with water flow at the top forming a stream. Some part of the waterfall is usually warm through the seasons. The Awhum waterfall is 30 metres high and is located around the Awhum Monastery.', image: 'https://i.pinimg.com/736x/88/f7/74/88f7743bd4d4c83f9b177d10c11df835--pond-waterfall-water-features.jpg', source: 'https://en.wikipedia.org/wiki/Awhum_Waterfall'})
     places1.save() 
 
-    const places2 = await new Places ({name: 'Osun-Osogbo Sacred Grove', location: 'Udi Local Government Area, Enugu State', description: 'The Awhum Waterfall is formed out of a massive outcrop of granite rock with water flow at the top forming a stream. Some part of the waterfall is usually warm through the seasons. The Awhum waterfall is 30 metres high and is located around the Awhum Monastery.', source: 'https://en.wikipedia.org/wiki/Awhum_Waterfall'})
-    places1.save() 
+    const places2 = await new Places ({name: 'Osun-Osogbo Sacred Grove', location: 'Udi Local Government Area, Enugu State', description: 'The Osun-Osogbo Grove is several centuries old[1] and is among the last of the sacred forests that once adjoined the edges of most Yoruba cities before extensive urbanization. In recognition of its global significance and its cultural value, the Sacred Grove was inscribed as a UNESCO World Heritage Site in 2005.', image: 'https://guardian.ng/wp-content/uploads/2017/06/Osogbo.jpg', source: ''})
+    places2.save() 
+
+    const places3 = await new Places ({name: 'Osun-Osogbo Sacred Grove', location: 'Udi Local Government Area, Enugu State', description: 'The Osun-Osogbo Grove is several centuries old[1] and is among the last of the sacred forests that once adjoined the edges of most Yoruba cities before extensive urbanization. In recognition of its global significance and its cultural value, the Sacred Grove was inscribed as a UNESCO World Heritage Site in 2005.', image: 'https://guardian.ng/wp-content/uploads/2017/06/Osogbo.jpg', source: ''})
+    places3.save() 
 
 
     const details = [
