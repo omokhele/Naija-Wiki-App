@@ -6,6 +6,7 @@ router.get('/', (req, res) => res.send('This is the root!'))
 router.post('/details', controllers.createDetail)
 router.get('/details', controllers.getDetails)
 router.get('/details/:id', controllers.getDetailById)
+router.get('/search/:key', controllers.getDetail)
 router.put('/details/:id', controllers.updateDetail)
 router.delete('/details/:id', controllers.deleteDetail)
 

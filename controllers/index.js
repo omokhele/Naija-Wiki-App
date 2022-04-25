@@ -34,6 +34,25 @@ const getDetailById = async (req, res) => {
     }
 }
 
+const getDetail = async (req, res) => {
+    try {    
+        let detail = await Detail.find(
+            {
+               "$or":[
+                    {book:{$regex:req.params.key}}
+                ]
+            }
+        )
+        if (detail) {
+            return res.status(200).json({detail});
+        }
+        return res.status(404).send('Detail with the specified name does not exist')
+    }catch (error) {
+        return res.status(500).send(error.message)
+    }
+   
+}
+
 const updateDetail = (req, res) => {
     try{
         const { id } = req.params;
@@ -67,6 +86,7 @@ module.exports = {
     createDetail,
     getDetails,
     getDetailById,
+    getDetail,
     updateDetail,
     deleteDetail
 }

@@ -10,6 +10,18 @@ export const data = async()  => {
     }
 }
 
+export const fetchData = async(input)  => {
+    try{
+        const response = await axios.get(`http://localhost:3000/api/search/${input}`)
+        // console.log(response)
+        return response;
+    } catch(error) {
+        console.log(error);
+    }
+}
+
+
+
 export const covidData = async() => {
     try{
     const res = await axios.get("https://covidnigeria.herokuapp.com/api")
