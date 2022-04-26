@@ -7,42 +7,42 @@ const Form = ({book, handleSubmit, handleChange, cancelPath}) => {
             <label>Book</label>
             <input
             placeholder="Book"
-            // defaultValue={book.book}
+            defaultValue={book.book}
             name="book"
             onChange={(e)=>handleChange(e)}
             /> 
 
             <input
             placeholder="Blurb"
-            // defaultValue={book.blurb}
+            defaultValue={book.blurb}
             name="blurb"
             onChange={(e)=>handleChange(e)}
             /> 
 
             <input
             placeholder="Book Image"
-            // defaultValue={book.bookImage}
+            defaultValue={book.bookImage}
             name="bookImage"
             onChange={(e)=>handleChange(e)}
             /> 
 
             <input
             placeholder="Author"
-            // defaultValue={book.author}
+            defaultValue={book.author}
             name="author"
             onChange={(e)=>handleChange(e)}
             /> 
 
             <input
             placeholder = "Bio"
-            // defaultValue={book.bio}
+            defaultValue={book.bio}
             name="bio"
             onChange={(e)=>handleChange(e)}
             /> 
 
             <input
             placeholder="Author Image"
-            // defaultValue={book.authorImage}
+            defaultValue={book.authorImage}
             name="authorImage"
             onChange={(e)=>handleChange(e)}
             /> 

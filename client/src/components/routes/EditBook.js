@@ -64,7 +64,7 @@ book ={book}
 // bookImage={book.bookImage}
 // author={book.author}
 // bio={book.bio}
-authorImage={book.authorImage}
+// authorImage={book.authorImage}
 handleChange={(e) => handleChange(e)}
 handleSubmit={(e) => handleSubmit(e)}
 cancelPath = {`/books/${id}`}
