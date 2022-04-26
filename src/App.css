@@ -1,0 +1,297 @@
+.header{
+  height: 150px;
+  background-color: rgb(87, 194, 194);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+ 
+}
+
+.whiteSpace{
+  background-color: white;
+  width: 1000px;
+  padding: 10px;
+}
+
+.content1{
+  padding: 10px;
+  margin-top: 120px;
+}
+
+.content4{
+  background-color: pink;
+  border-radius: 15px 15px ;
+  padding: 15px
+}
+
+.navLink {
+  text-decoration: none;
+  font-size: 20px ;
+  color:black;
+  padding: 20px;
+  
+}
+
+.navLink:hover {
+  text-decoration: none;
+  font-size: 24px ;
+  color: white;
+}
+
+.navLink:active {
+  text-decoration: none;
+  font-size: 24px ;
+  color: white;
+}
+.navLink:active {
+  color: red;
+}
+.navLink:focus {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+:target {
+  color: red;
+}
+
+.title{
+  color:white;
+  font-size: 48px;;
+}
+
+.bookLink{
+  text-decoration: none;
+  font-size: 18px ;
+  padding: 5px;
+  margin: auto;
+}
+
+.search{
+  margin-top: 300px;
+  width: 40%;
+  border-radius: 4px;
+  border:1px solid pink;
+  height: 40px;
+  padding: 15px 15px;
+  box-shadow: 1px 3px 3px ;
+}
+
+.button{
+  height: 40px;
+  box-shadow: 1px 3px 3px 1px ;
+  margin: 300px 10px;
+  
+}
+
+.div1 {
+  display: flex;
+  margin-left:-250px;
+  
+  
+  /* background-color:#282c34 */
+}
+
+.bookImage{
+  margin-left: 400px;
+  height: 500px;
+}
+
+.authorImage{
+  margin: 50px;
+  margin-top: 50px;
+  height: 200px;
+  align-items: left;
+}
+
+.blurb{
+  width: 750px;
+  margin-left: 50px
+}
+
+.bio{
+  width: 750px;
+}
+.container{
+  height: 10px; 
+}
+
+.book{
+  margin-left: 50px;
+}
+.author{
+  margin-top: 60px;
+}
+
+.footer{
+  position:fixed;
+  bottom:0;
+  width: 2000px;
+  height: 30px;
+  background-color: rgb(87, 194, 194);
+  color: white;
+  vertical-align: middle;
+  line-height: 80px; 
+}
+
+.aboutImage{
+  /* width: 500px; */
+  height: 475px;
+  margin-top: 200px;
+  margin-left: 100px; 
+}
+
+.about{
+  display: flex;
+}
+
+.aboutText{
+  margin-top: 150px;
+  width: 500px;
+  text-align: center;
+  padding: 50px;
+  font-size: 20px;
+}
+
+.inputSearch{
+  width: 500px
+}
+
+.App {
+  text-align: center;
+}
+
+.paragraph{
+  
+/* margin-top: 200px;  */
+/* width: 3000px; */
+border: 1px solid #e1b382;
+padding: 10px;
+}
+
+.notFound{
+  margin-top: 200px;
+  margin-left: 100px
+}
+
+.editBook{
+  margin-top: 120px;
+}
+
+.bookDiv{
+  display: flex;
+  
+}
+
+.imageBook{
+  margin-top: 200px;
+  margin-left: -1000px;
+  height: 500px;
+  width: 300px;
+}
+
+.bookBook{
+  margin-top: -500px;
+  margin-left: 700px;
+  height: 500px;
+  
+}
+
+.blurbBook{
+  margin-top: -475px;
+  margin-left: 700px;
+  height: 500px;
+  width: 750px
+}
+
+
+.authorBook{
+  margin-top: -580px;
+  margin-left: -370px;
+  /* margin: 50px; */
+  /* margin-top: 50px; */
+  height: 200px;
+  /* align-items: left; */
+}
+
+.authorAuthor{
+  margin-top: -400px;
+  margin-left: -50px;
+}
+
+.bioBook{
+  margin-top: 0px;
+  margin-left: 885px;
+  width: 500px
+}
+
+.function{
+  margin-top: 80px;
+  margin-left: -200px;
+  
+}
+
+.destroy{
+  margin: 10px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 250px;
+  width: 500px;
+  margin-left: 700px;
+  
+}
+
+.input{
+  margin: 7.5px;
+  padding:7.5px;
+  border-radius: 10px;
+}
+
+label{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.searchDiv{
+  display: flex;
+  
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
