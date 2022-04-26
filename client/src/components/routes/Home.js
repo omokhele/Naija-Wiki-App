@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
-import { covidData, data } from '../../services/constants'
+import { data } from '../../services/constants'
+import '../../App.css'
+
 
 const Home = () => {
 
@@ -25,18 +27,37 @@ useEffect(() => {
 }, [])
 
     return(
-        <div className="container">      
+        <div className="container">     
            {/* tribe: {displayData.tribe},
            language"{displayData.music},
            {displayData.religion} */}
-            <ul className="row">
+            <ul className="row box">
 {(displayData || []).map((display, index) => { 
       const { book, blurb, bookImage, author, bio, authorImage} = display
-    return  <div className="col-3"><li key={index}> {book} {blurb} {bookImage}, {author} {bio} {authorImage} </li></div>
+    return  <div className="col-3 mt-5 whiteSpace" key={index} >
+        <div className="content1">
+        <img src={bookImage} alt="books" className="img-fluid mb-4 images"/>
+        <div className="content">
+        <div className="fs-4 fw-bold mb-4">{book}</div>
+        <hr></hr>
+        <div className="content">
+        <div className="fs-6">{blurb}</div>
+        <hr></hr>
+        <img src={authorImage} alt="author" className="img-fluid mb-4"/> 
+        <div className="content4">
+        <div className="fs-6 fw-bold mb-4">{author} </div>
+        <hr></hr>
+        <div className="fs-6">{bio}  
+        </div>
+        </div>
+        </div> 
+        </div>
+        </div>
+      </div>
 })}
 <div className="col-8"></div>
         </ul>    
-
+        
             {/* <h4>Covid Cases</h4>
             <ul>
 {(cData).map((c, ) => { 

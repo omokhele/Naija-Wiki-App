@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { fetchData } from '../../services/constants'
+import '../../App.css'
 
 const Search = () => {
     const [searchResults, setSearchResults] = useState([]);
@@ -23,27 +24,33 @@ const Search = () => {
         }, [] )
 
 
+        
+
     return (
         
-        <div>
-           <input type="text" placeholder="Search Books" onChange={(e) => handleChange(e)}/>
-            <input type="button" value="Enter" onClick={() => handleClick()} />
-            <ul>
-            <li>{searchResults.book} </li>
-            <li>{searchResults.blurb}</li>
-            <li>{searchResults.bookImage}</li>
-            <li>{searchResults.author}</li>
-            <li>{searchResults.bio}</li>
-            <li>{searchResults.authorImage}</li>
-            </ul>
-
-            {/* {
+        <form className="justify-content-center form gap-4 mb-5">
+           <input type="text" placeholder="Search Books" className="search" onChange={(e) => handleChange(e)}/>
+            <input type="button" value="Enter" className="button fs-5" onClick={() => handleClick()} />
+            {
                 searchResults.map((searchResult, index) => {
                     const { book, blurb, bookImage, author, bio, authorImage} = searchResult
-                    return <p>{book} {blurb} {bookImage} {author} {bio} {authorImage} {index}</p> 
-                })
-            } */}
+                    return <div className="div1">
+        <img src={bookImage} alt="books" className="bookImage"/>
+        {/* <div className="content"> */}
+        <div className="container">
+        <h4 className="fs-4 fw-bold mb-4 text-start book">{book}</h4>
+        <p className="fs-6 blurb text-start">{blurb}</p>
+        <img src={authorImage} alt="author" className="authorImage float-start"/> 
+        {/* <div className="content3"> */}
+        <h4 className="fs-6 fw-bold mb-4 text-start author">{author} </h4>
+        <p className="fs-6 text-start bio">{bio}</p>
+        {/* </div> */}
+        </div> 
         </div>
+        // </div>
+                })
+            }
+        </form>
     )
 }
 

@@ -1,6 +1,6 @@
 function Footer (){
     return(
-        <div>
+        <div className="footer">
             <h6>© Copyright {new Date().getFullYear()}. All Rights Reserved.</h6>
         </div>
     )

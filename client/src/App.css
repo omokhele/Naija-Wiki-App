@@ -1,9 +1,242 @@
+.header{
+  /* border: 1px solid black; */
+  /* width: 2000px; */
+  height: 150px;
+  background-color: rgb(87, 194, 194);
+  /* margin: auto; */
+  /* padding: 0px; */
+  /* text-align: center; */
+  position: fixed;
+  /* top: 0; */
+  width: 100%;
+  z-index: 1;
+  /* padding: 15px 15px; */
+  /* box-shadow: 1px 3px 3px 1px ; */
+}
+
+.whiteSpace{
+  background-color: white;
+  width: 1000px;
+  padding: 10px;
+}
+
+.content1{
+  padding: 10px;
+  margin-top: 120px;
+}
+
+.content4{
+  background-color: pink;
+  border-radius: 15px 15px ;
+  padding: 15px
+}
+
+.navLink {
+  text-decoration: none;
+  font-size: 20px ;
+  color:black;
+  padding: 20px;
+  
+}
+
+.navLink:hover {
+  text-decoration: none;
+  font-size: 24px ;
+  color: white;
+}
+
+.navLink:active {
+  text-decoration: none;
+  font-size: 24px ;
+  color: white;
+}
+.navLink:active {
+  color: red;
+}
+.navLink:focus {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+:target {
+  color: red;
+}
+
+.title{
+  color:white;
+  font-size: 48px;;
+}
+
+.bookLink{
+  text-decoration: none;
+  font-size: 18px ;
+  padding: 5px;
+  margin: auto;
+}
+
+.search{
+  width: 40%;
+  border-radius: 4px;
+  border:1px solid #e1b382;
+  height: 40px;
+  padding: 15px 15px;
+  box-shadow: 1px 3px 3px  ;
+}
+
+.button{
+  height: 40px;
+  box-shadow: 1px 3px 3px 1px ;
+  margin: 175px 10px;
+}
+
+.div1 {
+  display: flex;
+  
+  
+  /* background-color:#282c34 */
+}
+
+.bookImage{
+  margin-left: 400px;
+  height: 500px;
+}
+
+.authorImage{
+  margin: 50px;
+  margin-top: 50px;
+  height: 200px;
+  align-items: left;
+}
+
+.blurb{
+  width: 750px;
+  margin-left: 50px
+}
+
+.bio{
+  width: 750px;
+}
+.container{
+  height: 10px; 
+}
+
+.book{
+  margin-left: 50px;
+}
+.author{
+  margin-top: 60px;
+}
+
+.footer{
+  position:fixed;
+  bottom:0;
+  width: 2000px;
+  height: 30px;
+  background-color: rgb(87, 194, 194);
+  color: white;
+  vertical-align: middle;
+  line-height: 80px; 
+}
+
+.aboutImage{
+  /* width: 500px; */
+  height: 475px;
+  margin-top: 200px;
+  margin-left: 100px; 
+}
+
+.about{
+  display: flex;
+}
+
+.aboutText{
+  margin-top: 200px;
+  width: 500px;
+  text-align: center;
+  padding: 50px;
+  font-size: 20px;
+}
+
 
 .App {
   text-align: center;
 }
 
-.App-logo {
+.paragraph{
+  
+/* margin-top: 200px;  */
+/* width: 3000px; */
+border: 1px solid #e1b382;
+padding: 10px;
+}
+
+.notFound{
+  margin-top: 200px;
+  margin-left: 100px
+}
+
+.editBook{
+  margin-top: 120px;
+}
+
+.bookDiv{
+  display: flex;
+  
+}
+
+.imageBook{
+  margin-top: 200px;
+  margin-left: -1000px;
+  height: 500px;
+  width: 300px;
+}
+
+.bookBook{
+  margin-top: -500px;
+  margin-left: 700px;
+  height: 500px;
+  
+}
+
+.blurbBook{
+  margin-top: -475px;
+  margin-left: 700px;
+  height: 500px;
+  width: 750px
+}
+
+
+.authorBook{
+  margin-top: -580px;
+  margin-left: -370px;
+  /* margin: 50px; */
+  /* margin-top: 50px; */
+  height: 200px;
+  /* align-items: left; */
+}
+
+.authorAuthor{
+  margin-top: -400px;
+  margin-left: -50px;
+}
+
+.bioBook{
+  margin-top: 0px;
+  margin-left: 885px;
+  width: 500px
+}
+
+.function{
+  margin-top: 80px;
+  margin-left: -200px;
+  
+}
+
+.destroy{
+  margin: 10px;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -36,4 +269,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

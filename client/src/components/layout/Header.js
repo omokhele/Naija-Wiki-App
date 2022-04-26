@@ -1,18 +1,18 @@
 import { NavLink } from 'react-router-dom'
+import '../../App.css'
 
 const Header = () => {
     return(
-        <div>
-    <nav>
-        <h3>Wiki App</h3>
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/about'>About</NavLink>
-        <NavLink to='/search'>Search</NavLink>
-    </nav>
-    <nav>
-        <NavLink to='/books'>Books</NavLink>
-        <NavLink to='/addBook'>Add Book</NavLink>
-        <NavLink to='/editBook'>Edit Book</NavLink>
+        <div className="header ">
+        <h1 className="text-center ubuntu my-4"><b>Nigerian Books <span className="title"> | WiKi</span></b></h1>
+        <nav className="text-center">
+        <NavLink to='/' className="navLink">HOME</NavLink>
+        <NavLink to='/about' className="navLink">ABOUT</NavLink>
+        <NavLink to='/search' className="navLink">SEARCH</NavLink>
+        {/* <NavLink to='/books/id' className="navLink">BOOK</NavLink> */}
+        <NavLink to='/books' className="navLink">BOOKS</NavLink>
+        <NavLink to='/addBook' className="navLink">ADD BOOK</NavLink>
+        {/* <NavLink to='/editBook' className="navLink">EDIT BOOK</NavLink> */}
     </nav>
     </div>
     )

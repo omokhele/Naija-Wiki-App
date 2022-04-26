@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap"
 
@@ -10,10 +10,12 @@ import Path from './Path';
 function App() {
   return (
     <div className="App">
-      <h1 className="text-center ubuntu my-4">Nigerian Books <span className="text-secondary">Wiki</span></h1>
+      {/* <h1 className="text-center ubuntu my-4"><b>Nigerian Books <span className="text"> | WiKi</span></b></h1> */}
      <Header/>
      <Path/>
      <Footer/>
+     
+     
     </div>
   );
 }

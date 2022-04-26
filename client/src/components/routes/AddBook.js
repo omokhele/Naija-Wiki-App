@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-
+// import Books from './Books';
+import Form from '../layout/Form';
 
 function AddBook() {
     const navigate = useNavigate();
-    const [addBook, setAddBook] = useState({
+    const [book, setBook] = useState({
         book: "",
         blurb: "",
         bookImage: "",
@@ -17,45 +18,38 @@ function AddBook() {
     const [createdBook, setCreatedBook] = useState(null)
 
     const handleChange = (event) => {
-        const updatedField = { [event.target.name] : event.target.value }
-        const addedBook = Object.assign(addBook, updatedField)
-        setAddBook(addedBook)
+        const addedField = { [event.target.name] : event.target.value }
+        const addedBook = Object.assign(book, addedField)
+        setBook(addedBook)
     }
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        //if entry is created in the database, save response data in state
         axios({
-            url: `localhost:3000/api/details`,
+            url: `http://localhost:3000/api/detail`,
             method: 'POST',
-            data: addBook
-        }).then(res => setCreatedBook(res.data.detail)).catch(console.error)
+            data: book,
+        }).then(res => setCreatedBook(res.data)).catch(console.error)
+        console.log("added")
     
     }
 
     useEffect(() => {
         if (createdBook) {
-            return navigate(`/details`)
+            return navigate(`/books`)
         }
-    }, [createdBook, navigate])
+    }, [book, createdBook, navigate])
 
-    return (
-       <div>
-           {/* {book} 
-           handleChange={(e) => handleChange(e)} 
-           handleSubmit={(e) => handleSubmit(e)} 
-           {cancelPath = '/'} */}
-
-<form onSubmit={handleSubmit}>
-      <input type="text" placeholder="Enter book title" defaultValue={addBook.book} name="book" onChange={(e) =>  handleChange(e)}/>
-      <button type="submit" >Submit</button>
-
-      {/* <Link to={cancelPath}>
-        <button>Cancel</button>
-      </Link> */}
-    </form>
+    return (       
+       <div> 
+    
+    <Form
+        book ={book}
+        handleChange={(e) => handleChange(e)}
+        handleSubmit={(e) => handleSubmit(e)}
+        cancelPath = '/'
+    />
         </div>
     )
-
     }
     export default AddBook
