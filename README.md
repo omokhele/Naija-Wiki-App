@@ -1,6 +1,5 @@
+![images](https://user-images.githubusercontent.com/64249873/165435916-f4700ac8-13d0-4a49-bf47-289547214d32.jpg)
 # NaijaBooks-Wiki-App! 
-![images](https://user-images.githubusercontent.com/64249873/165435873-4a1a364e-33a3-4806-b9ba-c31eb8c39cd2.png)
-
 
 ### Deployment:
 - Netlify  https://naija-books-wiki-app.netlify.app/
@@ -28,11 +27,13 @@ It implements React-Router
 API call using own database
 
 ##### POST MVP
-Implement filter functionality
-Add authentication feature
-Book Review 
-Purchase Suggestion
-Trivia
+Implement filter functionality![images](https://user-images.githubusercontent.com/64249873/165436127-2e88fec1-977b-4fc2-b00e-b6bc19fc68a3.jpg)
+
+- Add authentication feature
+- Book Review 
+- Purchase Suggestion
+- Trivia
+- Book Club
 
 ### Feature List
 Search Functionality
@@ -71,6 +72,7 @@ npm install axios react-router-dom bootstrap, sass
 
 Enjoy!
 
+![images](https://user-images.githubusercontent.com/64249873/165436253-2c6e202b-e6b4-4f1e-872b-b741d5b0859a.png)
 
 
 
