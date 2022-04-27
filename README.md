@@ -51,13 +51,6 @@ router.delete('/details/:id', controllers.deleteDetail) // delete functionality 
 ```
 
 Component Hierarchy:
-<Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/search' element={<Search/>}/>
-        <Route path='/books' element={<Books/>}/>
-        <Route path='/books/:id' element={<Book/>}/>
-        <Route path='/addBook' element={<AddBook/>}/>
-        <Route path='/books/:id/editBook' element={<EditBook/>}/>
-        <Route path="*" element={<PageNotFound/>}/>
-
 ![Capturea](https://user-images.githubusercontent.com/64249873/165430986-676a6f05-9d79-4b88-a2fd-35fbc7f792ab.JPG)
+
+![Captureb](https://user-images.githubusercontent.com/64249873/165433417-0188314f-1d3d-4279-bde2-801124cbe182.JPG)
