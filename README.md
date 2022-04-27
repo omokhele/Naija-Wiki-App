@@ -1,4 +1,5 @@
-# NaijaBooks-Wiki-App![download](https://user-images.githubusercontent.com/64249873/165435809-58ba6fb2-4590-48c8-9421-d2df432fbc60.png)
+# NaijaBooks-Wiki-App! 
+![images](https://user-images.githubusercontent.com/64249873/165435873-4a1a364e-33a3-4806-b9ba-c31eb8c39cd2.png)
 
 
 ### Deployment:
