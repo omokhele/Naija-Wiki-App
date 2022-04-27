@@ -21,10 +21,10 @@ The app is a working full-stack application, using the MERN stack:
 ---
 
 ### MVP
-It performs full CRUD operations
-It implements the Bootstrap Framework
-It implements React-Router
-API call using own database
+- It performs full CRUD operations
+- It implements the Bootstrap Framework
+- It implements React-Router
+- API call using own database
 
 ##### POST MVP
 - Implement filter functionality
