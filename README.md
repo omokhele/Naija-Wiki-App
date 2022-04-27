@@ -10,6 +10,12 @@ You can read a blurb of each book and a brief bio of each author to pique your i
 The wiki is built to enhance your visual enjoyment.
 
 The app employs full CRUD and has a fully functional database, allowing for creating, reading, updating and deleting books as needed. The app capacity is inexhaustible.
+
+The app is a working full-stack application, using the MERN stack:
+Node JS
+MongoDB/Mongoose
+Express JS
+React
 ___
 
 ### MVP
@@ -59,14 +65,9 @@ npm install axios mongoose cors morgan nodemon dotenv
 npm install axios react-router-dom bootstrap, sass
 ```
 
+Enjoy!
 
 
-
-The app is a working full-stack application, using the MERN stack:
-Node JS
-MongoDB/Mongoose
-Express JS
-React
 
 
 
