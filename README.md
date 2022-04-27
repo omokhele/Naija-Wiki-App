@@ -27,8 +27,7 @@ It implements React-Router
 API call using own database
 
 ##### POST MVP
-Implement filter functionality![images](https://user-images.githubusercontent.com/64249873/165436127-2e88fec1-977b-4fc2-b00e-b6bc19fc68a3.jpg)
-
+- Implement filter functionality
 - Add authentication feature
 - Book Review 
 - Purchase Suggestion
@@ -72,8 +71,9 @@ npm install axios react-router-dom bootstrap, sass
 
 Enjoy!
 
-![images](https://user-images.githubusercontent.com/64249873/165436253-2c6e202b-e6b4-4f1e-872b-b741d5b0859a.png)
 
+
+![download](https://user-images.githubusercontent.com/64249873/165436362-8dc1a5bd-3fec-49d6-83e7-38623cf0aa4f.png)
 
 
 
