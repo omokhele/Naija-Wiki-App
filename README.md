@@ -1,4 +1,4 @@
-# Naija-Wiki-App
+# NaijaBooks-Wiki-App
 
 ### Deployment:
 - Netlify https://naija-books-wiki-app.netlify.app/
