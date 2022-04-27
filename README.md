@@ -45,7 +45,7 @@ router.get('/search/:key', controllers.getDetail) // search functionality optimi
 router.put('/details/:id', controllers.updateDetail) // edit functionality by id
 router.delete('/details/:id', controllers.deleteDetail) // delete functionality ny id
 ```
-___
+---
 
 ### WireFrames
 ![Capturea](https://user-images.githubusercontent.com/64249873/165430986-676a6f05-9d79-4b88-a2fd-35fbc7f792ab.JPG)
@@ -59,7 +59,6 @@ ___
 ```terminal
 npm install axios mongoose cors morgan nodemon dotenv
 ```
-
 ##### Frontend
 ```terminal
 npm install axios react-router-dom bootstrap, sass
