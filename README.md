@@ -1,8 +1,8 @@
 # Naija-Wiki-App
 
 ### Deployment:
-Netlify https://naija-books-wiki-app.netlify.app/
-Heroku https://naijabooksdatabase.herokuapp.com/api/details
+- Netlify https://naija-books-wiki-app.netlify.app/
+- Heroku https://naijabooksdatabase.herokuapp.com/api/details
 
 ### Project Description
 The Naija Books Wiki App is a wiki built to showcase Nigerian literature at its finest. 
@@ -12,10 +12,10 @@ The wiki is built to enhance your visual enjoyment.
 The app employs full CRUD and has a fully functional database, allowing for creating, reading, updating and deleting books as needed. The app capacity is inexhaustible.
 
 The app is a working full-stack application, using the MERN stack:
-Node JS
-MongoDB/Mongoose
-Express JS
-React
+- Node JS
+- MongoDB/Mongoose
+- Express JS
+- React
 ___
 
 ### MVP
