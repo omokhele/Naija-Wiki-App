@@ -16,7 +16,8 @@ The app is a working full-stack application, using the MERN stack:
 - MongoDB/Mongoose
 - Express JS
 - React
-___
+
+---
 
 ### MVP
 It performs full CRUD operations
