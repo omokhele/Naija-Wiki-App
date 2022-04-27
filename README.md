@@ -6,7 +6,7 @@ The wiki is built to enhance your visual enjoyment.
 
 The app employs full CRUD and has a fully functional database, allowing for creating, reading, updating and deleting books as needed. The app capacity is inexhaustible.
 
-Deployment:
+#### Deployment:
 Netlify https://naija-books-wiki-app.netlify.app/
 Heroku https://naijabooksdatabase.herokuapp.com/api/details
 ___
