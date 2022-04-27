@@ -50,7 +50,8 @@ router.delete('/details/:id', controllers.deleteDetail) // delete functionality 
 
 ### WireFrames
 ![Capturea](https://user-images.githubusercontent.com/64249873/165430986-676a6f05-9d79-4b88-a2fd-35fbc7f792ab.JPG)
-![Capturec](https://user-images.githubusercontent.com/64249873/165435507-bbc89501-ea63-491c-8981-cc05a697f0a4.JPG)
+![Capturec](https://user-images.githubusercontent.com/64249873/165435630-a9de2e16-3c65-4f47-9233-cec60f437a59.JPG)
+
 
 ### Component Hierarchy:
 ![Captureb](https://user-images.githubusercontent.com/64249873/165433417-0188314f-1d3d-4279-bde2-801124cbe182.JPG)
