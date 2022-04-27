@@ -1,8 +1,8 @@
 # NaijaBooks-Wiki-App
 
 ### Deployment:
-- Netlify https://naija-books-wiki-app.netlify.app/
-- Heroku https://naijabooksdatabase.herokuapp.com/api/details
+- Netlify  https://naija-books-wiki-app.netlify.app/
+- Heroku   https://naijabooksdatabase.herokuapp.com/api/details
 
 ### Project Description
 The Naija Books Wiki App is a wiki built to showcase Nigerian literature at its finest. 
