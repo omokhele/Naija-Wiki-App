@@ -23,20 +23,32 @@ It implements React-Router
 API call
 
 Dependencies installed include:
-axios, mongoose, cors, morgan, react-router-dom, bootstrap, nodemon, dotenv, sass
+Backend
+
+```terminal
+npm install axios mongoose cors morgan nodemon dotenv
+```
+
+Frontend
+```terminal
+npm install axios react-router-dom bootstrap, sass
+```
 
 Feature List:
 Search Functionality
 CRUD functionality
 
-Server Routes:
+Routes:
+
+```terminal
 router.get('/', (req, res) => res.send('root'))
-router.post('/details', controllers.createDetail) - create functionality
-router.get('/details', controllers.getDetails) - read functionality
-router.get('/details/:id', controllers.getDetailById)  - id destructuring - useParams
-router.get('/search/:key', controllers.getDetail) - search functionality optimisation
-router.put('/details/:id', controllers.updateDetail) - edit functionality
-router.delete('/details/:id', controllers.deleteDetail) - delete functionality
+router.post('/details', controllers.createDetail) // create functionality
+router.get('/details', controllers.getDetails) // read functionality
+router.get('/details/:id', controllers.getDetailById)  // id destructuring - useParams
+router.get('/search/:key', controllers.getDetail) // search functionality optimisation
+router.put('/details/:id', controllers.updateDetail) // edit functionality
+router.delete('/details/:id', controllers.deleteDetail) // delete functionality
+```
 
 Component Hierarchy:
 <Route path='/' element={<Home/>}/>
